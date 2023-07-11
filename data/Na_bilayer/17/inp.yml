@@ -1,0 +1,73 @@
+comment: "Neutral Lipids and Na ion."
+temperature: 320
+random: {seed: hardware}
+geometry: {type: cuboid, length: [76, 76, 152]}
+mcloop: {macro: 10, micro: 200000.0}
+
+atomlist:
+    - NA:  {sigma: 4.6, eps: 0.01, dp: 5, q: 1}
+    - TL1: {sigma: 9.0, eps: 2.5, dp: 2}
+    - TL2: {sigma: 9.0, eps: 2.5, dp: 2, alphax: -18}
+    - AM:  {sigma: 8.549999999999999, eps: 2.5, dp: 2}
+
+moleculelist:
+    - Na: {atoms: [NA], atomic: True}
+    - lipid:
+        structure:
+            - AM: [0,0,0]
+            - TL1: [0,0,8.775]
+            - TL2: [0,0,17.775000000000002]
+        bondlist:
+            - fene: {index: [0,1], k: 1.2, rmax: 13.1625}
+            - fene: {index: [1,2], k: 1.2, rmax: 13.5}
+            - harmonic: {index: [0,2], k: 0.4, req: 35.4375}
+
+insertmolecules:
+    - Na: {N: 1, inactive: False}
+    - lipid: {N: 150}
+    
+energy:
+    - penalty:
+        file: penalty.dat
+        f0: 0.3
+        scale: 0.8
+        quiet: false
+        update: 1e3 
+        nodrift: true
+        samplings: 1
+        coords:
+            - molecule: { property: cmcm_z, range: [-70, 70], resolution: 1, indexes: [0,0,1,450], dir: [0,0,1] }
+    - bonded: {}
+    - nonbonded:
+        default:
+            - wca:
+                mixing: LB
+        TL1 TL1:
+            - wca:
+                mixing: LB
+            - cos2: {rc: 10.102158000000001, eps: 2.5, wc: 16.2}
+        TL1 TL2:
+            - wca:
+                mixing: LB
+            - cos2: {rc: 10.102158000000001, eps: 2.5, wc: 16.2}
+        TL2 TL2:
+            - wca:
+                mixing: LB
+            - cos2: {rc: 10.102158000000001, eps: 2.5, wc: 16.2}
+        NA TL2:
+            - wca:
+                mixing: LB
+            - polar: {epsr: 70.81369939999998}
+
+moves:
+    - moltransrot: {molecule: lipid, dp: 1.0, dprot: 0.5, repeat: 150}
+    - transrot: {molecule: lipid, repeat: 150}
+    - transrot: {molecule: Na, repeat: 1}
+    - volume: {dV: 0.03, method: isochoric, repeat: 1}
+        
+analysis:
+    - savestate: {file: state.json}
+    - savestate: {file: confout.pqr}
+    - xtcfile: {file: traj.xtc, nstep: 1e4}
+    - sliceddensity: {file: AM.dat, nstep: 1e3, atoms: [AM], dz: 0.5, nskip: 1e4, atomcom: TL2}
+    - sanity: {nstep: 1e4}

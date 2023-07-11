@@ -1,0 +1,13 @@
+name: faunus
+dependencies:
+  - python=3.8
+  - jinja2
+  - notebook
+  - cmake
+  - ruamel_yaml
+  - numpy
+  - pandas
+  - scipy
+  - matplotlib
+  - openpyxl
+  - conda-forge::mdtraj
