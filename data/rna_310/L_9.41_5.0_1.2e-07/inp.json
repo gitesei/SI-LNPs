@@ -2668,7 +2668,7 @@
                 "molecules": [
                     "rna"
                 ],
-                "radius": 11,
+                "radius": 12,
                 "k": 1000,
                 "com": false
             }

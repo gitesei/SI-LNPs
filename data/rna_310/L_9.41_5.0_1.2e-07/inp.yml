@@ -334,7 +334,7 @@ insertmolecules:
 
 energy:
     - bonded: {}
-    - confine: {type: cylinder, molecules: [rna], radius: 11, k: 1000, com: False}
+    - confine: {type: cylinder, molecules: [rna], radius: 12, k: 1000, com: False}
     - nonbonded_splined:
         default:
             - wca:

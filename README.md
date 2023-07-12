@@ -16,6 +16,7 @@ To open the Notebooks, install [Miniconda](https://conda.io/miniconda.html) and 
 
 ```bash
     tar xvfj faunus.tar.bz2
+    cd faunus
     conda activate faunus
     cmake . -DENABLE_MPI=OFF -DCMAKE_BUILD_TYPE=Release -DENABLE_OPENMP=OFF
     make faunus -j4
