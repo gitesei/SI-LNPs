@@ -1,6 +1,6 @@
 # pH-sensitive coarse-grained model of mRNA lipid nanoparticles
 
-This repository contains Python code, [Jupyter](http://jupyter.org) Notebooks, and data for reproducing the results presented in the manuscript _Lipid shape and packing are key for optimal design of pH sensitive mRNA lipid nanoparticles_.
+This repository contains Python code, [Jupyter](http://jupyter.org) Notebooks, and data for reproducing the results presented in the manuscript _Lipid shape and packing are key for optimal design of pH-sensitive mRNA lipid nanoparticles_.
 
 ### Usage
 

@@ -1,0 +1,754 @@
+{
+    "analysis": [
+        {
+            "savestate": {
+                "file": "state.json"
+            }
+        },
+        {
+            "savestate": {
+                "file": "confout.pqr"
+            }
+        },
+        {
+            "savestate": {
+                "file": "confout.gro"
+            }
+        },
+        {
+            "xtcfile": {
+                "file": "traj.xtc",
+                "nstep": 1000,
+                "samples": 10000
+            }
+        },
+        {
+            "reactioncoordinate": {
+                "average": 25.258259680871937,
+                "file": "Rg.dat",
+                "index": 0,
+                "nstep": 1000,
+                "property": "Rg",
+                "samples": 10000,
+                "type": "molecule"
+            }
+        },
+        {
+            "reactioncoordinate": {
+                "average": 66.28656063232785,
+                "file": "Ree.dat",
+                "index": 0,
+                "nstep": 1000,
+                "property": "end2end",
+                "samples": 10000,
+                "type": "molecule"
+            }
+        },
+        {
+            "reactioncoordinate": {
+                "average": -5.862337077536726e-07,
+                "file": "tau.dat",
+                "index": 0,
+                "nstep": 1000,
+                "property": "helicity",
+                "samples": 10000,
+                "type": "molecule"
+            }
+        },
+        {
+            "systemenergy": {
+                "Cv/kB": 49.722,
+                "file": "energy.dat",
+                "final": [
+                    39.612848220498734,
+                    16.696395331975797
+                ],
+                "init": 2619700.0,
+                "mean": 60.516,
+                "nstep": 100000,
+                "samples": 100
+            }
+        }
+    ],
+    "compiler": "Apple LLVM 14.0.3 (clang-1403.0.22.14.1)",
+    "energy": [
+        {
+            "hamiltonian": [
+                {
+                    "bonded": {
+                        "bondlist-intramolecular": [
+                            {
+                                "harmonic": {
+                                    "index": [
+                                        0,
+                                        1
+                                    ],
+                                    "k": 4.8,
+                                    "req": 3.5
+                                }
+                            },
+                            {
+                                "harmonic": {
+                                    "index": [
+                                        0,
+                                        2
+                                    ],
+                                    "k": 4.8,
+                                    "req": 5.0
+                                }
+                            },
+                            {
+                                "harmonic": {
+                                    "index": [
+                                        2,
+                                        3
+                                    ],
+                                    "k": 4.8,
+                                    "req": 3.5
+                                }
+                            },
+                            {
+                                "harmonic": {
+                                    "index": [
+                                        2,
+                                        4
+                                    ],
+                                    "k": 4.8,
+                                    "req": 5.0
+                                }
+                            },
+                            {
+                                "harmonic": {
+                                    "index": [
+                                        4,
+                                        5
+                                    ],
+                                    "k": 4.8,
+                                    "req": 3.5
+                                }
+                            },
+                            {
+                                "harmonic": {
+                                    "index": [
+                                        4,
+                                        6
+                                    ],
+                                    "k": 4.8,
+                                    "req": 5.0
+                                }
+                            },
+                            {
+                                "harmonic": {
+                                    "index": [
+                                        6,
+                                        7
+                                    ],
+                                    "k": 4.8,
+                                    "req": 3.5
+                                }
+                            },
+                            {
+                                "harmonic": {
+                                    "index": [
+                                        6,
+                                        8
+                                    ],
+                                    "k": 4.8,
+                                    "req": 5.0
+                                }
+                            },
+                            {
+                                "harmonic": {
+                                    "index": [
+                                        8,
+                                        9
+                                    ],
+                                    "k": 4.8,
+                                    "req": 3.5
+                                }
+                            },
+                            {
+                                "harmonic": {
+                                    "index": [
+                                        8,
+                                        10
+                                    ],
+                                    "k": 4.8,
+                                    "req": 5.0
+                                }
+                            },
+                            {
+                                "harmonic": {
+                                    "index": [
+                                        10,
+                                        11
+                                    ],
+                                    "k": 4.8,
+                                    "req": 3.5
+                                }
+                            },
+                            {
+                                "harmonic": {
+                                    "index": [
+                                        10,
+                                        12
+                                    ],
+                                    "k": 4.8,
+                                    "req": 5.0
+                                }
+                            },
+                            {
+                                "harmonic": {
+                                    "index": [
+                                        12,
+                                        13
+                                    ],
+                                    "k": 4.8,
+                                    "req": 3.5
+                                }
+                            },
+                            {
+                                "harmonic": {
+                                    "index": [
+                                        12,
+                                        14
+                                    ],
+                                    "k": 4.8,
+                                    "req": 5.0
+                                }
+                            },
+                            {
+                                "harmonic": {
+                                    "index": [
+                                        14,
+                                        15
+                                    ],
+                                    "k": 4.8,
+                                    "req": 3.5
+                                }
+                            },
+                            {
+                                "harmonic": {
+                                    "index": [
+                                        14,
+                                        16
+                                    ],
+                                    "k": 4.8,
+                                    "req": 5.0
+                                }
+                            },
+                            {
+                                "harmonic": {
+                                    "index": [
+                                        16,
+                                        17
+                                    ],
+                                    "k": 4.8,
+                                    "req": 3.5
+                                }
+                            },
+                            {
+                                "harmonic": {
+                                    "index": [
+                                        16,
+                                        18
+                                    ],
+                                    "k": 4.8,
+                                    "req": 5.0
+                                }
+                            },
+                            {
+                                "harmonic": {
+                                    "index": [
+                                        18,
+                                        19
+                                    ],
+                                    "k": 4.8,
+                                    "req": 3.5
+                                }
+                            },
+                            {
+                                "harmonic": {
+                                    "index": [
+                                        18,
+                                        20
+                                    ],
+                                    "k": 4.8,
+                                    "req": 5.0
+                                }
+                            },
+                            {
+                                "harmonic": {
+                                    "index": [
+                                        20,
+                                        21
+                                    ],
+                                    "k": 4.8,
+                                    "req": 3.5
+                                }
+                            },
+                            {
+                                "harmonic": {
+                                    "index": [
+                                        20,
+                                        22
+                                    ],
+                                    "k": 4.8,
+                                    "req": 5.0
+                                }
+                            },
+                            {
+                                "harmonic": {
+                                    "index": [
+                                        22,
+                                        23
+                                    ],
+                                    "k": 4.8,
+                                    "req": 3.5
+                                }
+                            },
+                            {
+                                "harmonic": {
+                                    "index": [
+                                        22,
+                                        24
+                                    ],
+                                    "k": 4.8,
+                                    "req": 5.0
+                                }
+                            },
+                            {
+                                "harmonic": {
+                                    "index": [
+                                        24,
+                                        25
+                                    ],
+                                    "k": 4.8,
+                                    "req": 3.5
+                                }
+                            },
+                            {
+                                "harmonic": {
+                                    "index": [
+                                        24,
+                                        26
+                                    ],
+                                    "k": 4.8,
+                                    "req": 5.0
+                                }
+                            },
+                            {
+                                "harmonic": {
+                                    "index": [
+                                        26,
+                                        27
+                                    ],
+                                    "k": 4.8,
+                                    "req": 3.5
+                                }
+                            },
+                            {
+                                "harmonic": {
+                                    "index": [
+                                        26,
+                                        28
+                                    ],
+                                    "k": 4.8,
+                                    "req": 5.0
+                                }
+                            },
+                            {
+                                "harmonic": {
+                                    "index": [
+                                        28,
+                                        29
+                                    ],
+                                    "k": 4.8,
+                                    "req": 3.5
+                                }
+                            },
+                            {
+                                "harmonic": {
+                                    "index": [
+                                        28,
+                                        30
+                                    ],
+                                    "k": 4.8,
+                                    "req": 5.0
+                                }
+                            },
+                            {
+                                "harmonic": {
+                                    "index": [
+                                        30,
+                                        31
+                                    ],
+                                    "k": 4.8,
+                                    "req": 3.5
+                                }
+                            },
+                            {
+                                "harmonic": {
+                                    "index": [
+                                        30,
+                                        32
+                                    ],
+                                    "k": 4.8,
+                                    "req": 5.0
+                                }
+                            },
+                            {
+                                "harmonic": {
+                                    "index": [
+                                        32,
+                                        33
+                                    ],
+                                    "k": 4.8,
+                                    "req": 3.5
+                                }
+                            },
+                            {
+                                "harmonic": {
+                                    "index": [
+                                        32,
+                                        34
+                                    ],
+                                    "k": 4.8,
+                                    "req": 5.0
+                                }
+                            },
+                            {
+                                "harmonic": {
+                                    "index": [
+                                        34,
+                                        35
+                                    ],
+                                    "k": 4.8,
+                                    "req": 3.5
+                                }
+                            },
+                            {
+                                "harmonic": {
+                                    "index": [
+                                        34,
+                                        36
+                                    ],
+                                    "k": 4.8,
+                                    "req": 5.0
+                                }
+                            },
+                            {
+                                "harmonic": {
+                                    "index": [
+                                        36,
+                                        37
+                                    ],
+                                    "k": 4.8,
+                                    "req": 3.5
+                                }
+                            },
+                            {
+                                "harmonic": {
+                                    "index": [
+                                        36,
+                                        38
+                                    ],
+                                    "k": 4.8,
+                                    "req": 5.0
+                                }
+                            },
+                            {
+                                "harmonic": {
+                                    "index": [
+                                        38,
+                                        39
+                                    ],
+                                    "k": 4.8,
+                                    "req": 3.5
+                                }
+                            },
+                            {
+                                "harmonic": {
+                                    "index": [
+                                        38,
+                                        40
+                                    ],
+                                    "k": 4.8,
+                                    "req": 5.0
+                                }
+                            },
+                            {
+                                "harmonic": {
+                                    "index": [
+                                        40,
+                                        41
+                                    ],
+                                    "k": 4.8,
+                                    "req": 3.5
+                                }
+                            },
+                            {
+                                "harmonic": {
+                                    "index": [
+                                        40,
+                                        42
+                                    ],
+                                    "k": 4.8,
+                                    "req": 5.0
+                                }
+                            },
+                            {
+                                "harmonic": {
+                                    "index": [
+                                        42,
+                                        43
+                                    ],
+                                    "k": 4.8,
+                                    "req": 3.5
+                                }
+                            },
+                            {
+                                "harmonic": {
+                                    "index": [
+                                        42,
+                                        44
+                                    ],
+                                    "k": 4.8,
+                                    "req": 5.0
+                                }
+                            },
+                            {
+                                "harmonic": {
+                                    "index": [
+                                        44,
+                                        45
+                                    ],
+                                    "k": 4.8,
+                                    "req": 3.5
+                                }
+                            },
+                            {
+                                "harmonic": {
+                                    "index": [
+                                        44,
+                                        46
+                                    ],
+                                    "k": 4.8,
+                                    "req": 5.0
+                                }
+                            },
+                            {
+                                "harmonic": {
+                                    "index": [
+                                        46,
+                                        47
+                                    ],
+                                    "k": 4.8,
+                                    "req": 3.5
+                                }
+                            },
+                            {
+                                "harmonic": {
+                                    "index": [
+                                        46,
+                                        48
+                                    ],
+                                    "k": 4.8,
+                                    "req": 5.0
+                                }
+                            },
+                            {
+                                "harmonic": {
+                                    "index": [
+                                        48,
+                                        49
+                                    ],
+                                    "k": 4.8,
+                                    "req": 3.5
+                                }
+                            },
+                            {
+                                "harmonic": {
+                                    "index": [
+                                        48,
+                                        50
+                                    ],
+                                    "k": 4.8,
+                                    "req": 5.0
+                                }
+                            },
+                            {
+                                "harmonic": {
+                                    "index": [
+                                        50,
+                                        51
+                                    ],
+                                    "k": 4.8,
+                                    "req": 3.5
+                                }
+                            },
+                            {
+                                "harmonic": {
+                                    "index": [
+                                        50,
+                                        52
+                                    ],
+                                    "k": 4.8,
+                                    "req": 5.0
+                                }
+                            },
+                            {
+                                "harmonic": {
+                                    "index": [
+                                        52,
+                                        53
+                                    ],
+                                    "k": 4.8,
+                                    "req": 3.5
+                                }
+                            },
+                            {
+                                "harmonic": {
+                                    "index": [
+                                        52,
+                                        54
+                                    ],
+                                    "k": 4.8,
+                                    "req": 5.0
+                                }
+                            },
+                            {
+                                "harmonic": {
+                                    "index": [
+                                        54,
+                                        55
+                                    ],
+                                    "k": 4.8,
+                                    "req": 3.5
+                                }
+                            },
+                            {
+                                "harmonic": {
+                                    "index": [
+                                        54,
+                                        56
+                                    ],
+                                    "k": 4.8,
+                                    "req": 5.0
+                                }
+                            },
+                            {
+                                "harmonic": {
+                                    "index": [
+                                        56,
+                                        57
+                                    ],
+                                    "k": 4.8,
+                                    "req": 3.5
+                                }
+                            },
+                            {
+                                "harmonic": {
+                                    "index": [
+                                        56,
+                                        58
+                                    ],
+                                    "k": 4.8,
+                                    "req": 5.0
+                                }
+                            },
+                            {
+                                "harmonic": {
+                                    "index": [
+                                        58,
+                                        59
+                                    ],
+                                    "k": 4.8,
+                                    "req": 3.5
+                                }
+                            }
+                        ],
+                        "relative time": 0.0003892057194923188
+                    }
+                },
+                {
+                    "nonbonded": {
+                        "default": [
+                            {
+                                "wca": {
+                                    "mixing": "LB"
+                                }
+                            },
+                            {
+                                "custom": {
+                                    "constants": {
+                                        "kappa": 0.14708605772023167,
+                                        "lB": 7.147141976012449
+                                    },
+                                    "cutoff": 1000,
+                                    "function": "lB * q1 * q2 * ( exp(-kappa*r) / r - exp(-kappa*Rc) / Rc )"
+                                }
+                            }
+                        ],
+                        "selfenergy": {
+                            "dipole": false,
+                            "monopole": false
+                        }
+                    }
+                }
+            ]
+        }
+    ],
+    "geometry": {
+        "length": [
+            200.0,
+            200.0,
+            200.0
+        ],
+        "type": "cuboid"
+    },
+    "git revision": "5cfb56e (2023-07-12)",
+    "groups": [
+        {
+            "rna": {
+                "compressible": false,
+                "index": [
+                    0,
+                    59
+                ],
+                "size": 60
+            }
+        }
+    ],
+    "montecarlo": {
+        "average potential energy (kT)": 61.71084822121338,
+        "last move": "transrot"
+    },
+    "moves": [
+        {
+            "transrot": {
+                "acceptance": 0.555,
+                "dir": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "molecule": "rna",
+                "molid": 0,
+                "moves": 600000000,
+                "relative time": 0.802,
+                "repeat": 60,
+                "√⟨r²⟩": 0.703
+            }
+        }
+    ],
+    "number of groups": 1,
+    "number of particles": 60,
+    "reactionlist": null,
+    "relative drift": 3.7717674224017935e-14,
+    "simulation time": {
+        "in minutes": 21.8,
+        "in seconds": 1308
+    },
+    "temperature": 298.0
+}

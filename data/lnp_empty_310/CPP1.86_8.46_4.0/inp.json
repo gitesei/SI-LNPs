@@ -1,0 +1,470 @@
+{
+    "comment": "3-bead Cooke lipid model. For more information: doi:10/chqzjk",
+    "temperature": 310,
+    "random": {
+        "seed": "hardware"
+    },
+    "geometry": {
+        "type": "hexagonal",
+        "length": 87.96459430051421,
+        "radius": 32.406022233435095
+    },
+    "mcloop": {
+        "macro": 10,
+        "micro": 200000.0
+    },
+    "atomlist": [
+        {
+            "HD": {
+                "sigma": 5.000000000000002,
+                "eps": 2.5774950000000003,
+                "dp": 2
+            }
+        },
+        {
+            "HHD": {
+                "sigma": 5.000000000000002,
+                "eps": 2.5774950000000003,
+                "dp": 2,
+                "q": 1
+            }
+        },
+        {
+            "T1": {
+                "sigma": 6.499999999999998,
+                "eps": 2.5774950000000003,
+                "dp": 2
+            }
+        },
+        {
+            "T2": {
+                "sigma": 8.499999999999998,
+                "eps": 2.5774950000000003,
+                "dp": 2,
+                "alphax": -18
+            }
+        },
+        {
+            "NA": {
+                "sigma": 4.6,
+                "eps": 0.01,
+                "dp": 10,
+                "q": 1
+            }
+        },
+        {
+            "CL": {
+                "sigma": 4.6,
+                "eps": 0.01,
+                "dp": 10,
+                "q": -1
+            }
+        },
+        {
+            "H": {
+                "pactivity": 4.0,
+                "eps": 0.01,
+                "implicit": true
+            }
+        }
+    ],
+    "moleculelist": [
+        {
+            "Na": {
+                "atoms": [
+                    "NA"
+                ],
+                "atomic": true,
+                "activity": 0.12325997374025917
+            }
+        },
+        {
+            "Cl": {
+                "atoms": [
+                    "CL"
+                ],
+                "atomic": true,
+                "activity": 0.12058105647098612
+            }
+        },
+        {
+            "lipid": {
+                "activity": 3.4672482822503974e-08,
+                "structure": [
+                    {
+                        "HD": [
+                            0,
+                            0,
+                            0
+                        ]
+                    },
+                    {
+                        "T1": [
+                            0,
+                            0,
+                            5.75
+                        ]
+                    },
+                    {
+                        "T2": [
+                            0,
+                            0,
+                            13.25
+                        ]
+                    }
+                ],
+                "bondlist": [
+                    {
+                        "fene": {
+                            "index": [
+                                0,
+                                1
+                            ],
+                            "k": 1.2,
+                            "rmax": 8.625
+                        }
+                    },
+                    {
+                        "fene": {
+                            "index": [
+                                1,
+                                2
+                            ],
+                            "k": 1.2,
+                            "rmax": 11.249999999999996
+                        }
+                    },
+                    {
+                        "harmonic": {
+                            "index": [
+                                0,
+                                2
+                            ],
+                            "k": 0.4,
+                            "req": 26.624999999999996
+                        }
+                    }
+                ],
+                "keeppos": true
+            }
+        }
+    ],
+    "insertmolecules": [
+        {
+            "Na": {
+                "N": 400,
+                "inactive": true
+            }
+        },
+        {
+            "Cl": {
+                "N": 400,
+                "inactive": true
+            }
+        },
+        {
+            "lipid": {
+                "N": 400,
+                "inactive": true
+            }
+        }
+    ],
+    "energy": [
+        {
+            "bonded": {}
+        },
+        {
+            "nonbonded_splined": {
+                "default": [
+                    {
+                        "wca": {
+                            "mixing": "LB"
+                        }
+                    },
+                    {
+                        "custom": {
+                            "cutoff": 1000,
+                            "function": "lB * q1 * q2 * ( 1.0 / r - 1.0 / Rc )",
+                            "constants": {
+                                "lB": 10.898630255420876
+                            }
+                        }
+                    },
+                    {
+                        "polar": {
+                            "epsr": 74.18851892903221
+                        }
+                    }
+                ],
+                "T1 T1": [
+                    {
+                        "wca": {
+                            "mixing": "LB"
+                        }
+                    },
+                    {
+                        "cos2": {
+                            "rc": 7.296002999999999,
+                            "eps": 2.5774950000000003,
+                            "wc": 11.699999999999998
+                        }
+                    }
+                ],
+                "T1 T2": [
+                    {
+                        "wca": {
+                            "mixing": "LB"
+                        }
+                    },
+                    {
+                        "cos2": {
+                            "rc": 8.418465,
+                            "eps": 2.5774950000000003,
+                            "wc": 13.499999999999996
+                        }
+                    }
+                ],
+                "T2 T2": [
+                    {
+                        "wca": {
+                            "mixing": "LB"
+                        }
+                    },
+                    {
+                        "cos2": {
+                            "rc": 9.540926999999998,
+                            "eps": 2.5774950000000003,
+                            "wc": 15.299999999999997
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "reactionlist": [
+        {
+            "HHD = HD + Na + H": {
+                "pK": 8.46
+            }
+        },
+        {
+            "HHD + Cl = HD + H": {
+                "pK": 8.46
+            }
+        },
+        {
+            "= Na + Cl": {}
+        },
+        {
+            "= lipid": {
+                "neutral": true
+            }
+        }
+    ],
+    "moves": [
+        {
+            "rcmc": {
+                "repeat": 20
+            }
+        },
+        {
+            "moltransrot": {
+                "molecule": "lipid",
+                "dp": 0.2,
+                "dprot": 0.5,
+                "repeat": 200
+            }
+        },
+        {
+            "transrot": {
+                "molecule": "lipid",
+                "repeat": 10
+            }
+        },
+        {
+            "transrot": {
+                "molecule": "Cl",
+                "repeat": "N"
+            }
+        },
+        {
+            "transrot": {
+                "molecule": "Na",
+                "repeat": 10
+            }
+        },
+        {
+            "volume": {
+                "dV": 0.05,
+                "method": "isochoric",
+                "repeat": 1
+            }
+        }
+    ],
+    "analysis": [
+        {
+            "savestate": {
+                "file": "state.json"
+            }
+        },
+        {
+            "savestate": {
+                "file": "confout.pqr"
+            }
+        },
+        {
+            "savestate": {
+                "file": "confout.gro"
+            }
+        },
+        {
+            "xtcfile": {
+                "file": "traj.xtc",
+                "nstep": 10000.0
+            }
+        },
+        {
+            "systemenergy": {
+                "file": "energy.dat",
+                "nstep": 10000.0
+            }
+        },
+        {
+            "savestate": {
+                "file": "cuboid.pqr",
+                "convert_hexagon": true,
+                "nstep": 1000000.0
+            }
+        },
+        {
+            "qrfile": {
+                "file": "qrtraj.dat",
+                "nstep": 10000.0
+            }
+        },
+        {
+            "reactioncoordinate": {
+                "file": "charge.dat",
+                "nstep": 1000.0,
+                "type": "system",
+                "property": "Q"
+            }
+        },
+        {
+            "reactioncoordinate": {
+                "file": "order.dat",
+                "nstep": 1000.0,
+                "type": "system",
+                "property": "OrderParam",
+                "index": 2
+            }
+        },
+        {
+            "reactioncoordinate": {
+                "file": "NNa.dat",
+                "nstep": 1000.0,
+                "type": "molecule",
+                "property": "N",
+                "index": 0
+            }
+        },
+        {
+            "reactioncoordinate": {
+                "file": "NCl.dat",
+                "nstep": 1000.0,
+                "type": "molecule",
+                "property": "N",
+                "index": 1
+            }
+        },
+        {
+            "reactioncoordinate": {
+                "file": "Nlipids.dat",
+                "nstep": 1000.0,
+                "type": "atom",
+                "property": "N",
+                "index": 2
+            }
+        },
+        {
+            "reactioncoordinate": {
+                "file": "radius.dat",
+                "nstep": 1000.0,
+                "type": "system",
+                "property": "radius"
+            }
+        },
+        {
+            "reactioncoordinate": {
+                "file": "Lz.dat",
+                "nstep": 1000.0,
+                "type": "system",
+                "property": "Lz"
+            }
+        },
+        {
+            "reactioncoordinate": {
+                "file": "NHHD.dat",
+                "nstep": 1000.0,
+                "type": "atom",
+                "property": "N",
+                "index": 1
+            }
+        },
+        {
+            "reactioncoordinate": {
+                "file": "RCl.dat",
+                "nstep": 1000.0,
+                "type": "molecule",
+                "property": "Rinner",
+                "indexes": [
+                    2,
+                    3,
+                    5,
+                    5
+                ],
+                "dir": [
+                    1,
+                    1,
+                    0
+                ]
+            }
+        },
+        {
+            "reactioncoordinate": {
+                "file": "Rcyl.dat",
+                "nstep": 1000.0,
+                "type": "molecule",
+                "property": "Rinner",
+                "indexes": [
+                    2,
+                    3,
+                    0,
+                    1
+                ],
+                "dir": [
+                    1,
+                    1,
+                    0
+                ]
+            }
+        },
+        {
+            "atomprofile": {
+                "file": "distCL.dat",
+                "nstep": 1000.0,
+                "atoms": [
+                    "CL"
+                ],
+                "dir": [
+                    1,
+                    1,
+                    0
+                ],
+                "atomcom": "T1",
+                "dr": 0.2
+            }
+        }
+    ]
+}
+

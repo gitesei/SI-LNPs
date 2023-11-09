@@ -1,0 +1,165 @@
+comment: "polyAde-30 in NaCl solution"
+temperature: 298
+random: {seed: hardware}
+geometry: {type: cuboid, length: 200}
+mcloop: {macro: 10, micro: 1000000.0}
+
+atomlist:
+    - NU: {sigma: 7, eps: 2.477721, dp: 2}
+    - P: {sigma: 4.6, eps: 2.477721, dp: 2, q: -1}
+
+moleculelist:
+    - rna: 
+        structure:
+
+            - NU: [0,0,-99.0]
+            - P:  [0,4,-99.0]
+            - NU: [0,0,-97.0]
+            - P:  [0,4,-97.0]
+            - NU: [0,0,-95.0]
+            - P:  [0,4,-95.0]
+            - NU: [0,0,-93.0]
+            - P:  [0,4,-93.0]
+            - NU: [0,0,-91.0]
+            - P:  [0,4,-91.0]
+            - NU: [0,0,-89.0]
+            - P:  [0,4,-89.0]
+            - NU: [0,0,-87.0]
+            - P:  [0,4,-87.0]
+            - NU: [0,0,-85.0]
+            - P:  [0,4,-85.0]
+            - NU: [0,0,-83.0]
+            - P:  [0,4,-83.0]
+            - NU: [0,0,-81.0]
+            - P:  [0,4,-81.0]
+            - NU: [0,0,-79.0]
+            - P:  [0,4,-79.0]
+            - NU: [0,0,-77.0]
+            - P:  [0,4,-77.0]
+            - NU: [0,0,-75.0]
+            - P:  [0,4,-75.0]
+            - NU: [0,0,-73.0]
+            - P:  [0,4,-73.0]
+            - NU: [0,0,-71.0]
+            - P:  [0,4,-71.0]
+            - NU: [0,0,-69.0]
+            - P:  [0,4,-69.0]
+            - NU: [0,0,-67.0]
+            - P:  [0,4,-67.0]
+            - NU: [0,0,-65.0]
+            - P:  [0,4,-65.0]
+            - NU: [0,0,-63.0]
+            - P:  [0,4,-63.0]
+            - NU: [0,0,-61.0]
+            - P:  [0,4,-61.0]
+            - NU: [0,0,-59.0]
+            - P:  [0,4,-59.0]
+            - NU: [0,0,-57.0]
+            - P:  [0,4,-57.0]
+            - NU: [0,0,-55.0]
+            - P:  [0,4,-55.0]
+            - NU: [0,0,-53.0]
+            - P:  [0,4,-53.0]
+            - NU: [0,0,-51.0]
+            - P:  [0,4,-51.0]
+            - NU: [0,0,-49.0]
+            - P:  [0,4,-49.0]
+            - NU: [0,0,-47.0]
+            - P:  [0,4,-47.0]
+            - NU: [0,0,-45.0]
+            - P:  [0,4,-45.0]
+            - NU: [0,0,-43.0]
+            - P:  [0,4,-43.0]
+            - NU: [0,0,-41.0]
+            - P:  [0,4,-41.0] 
+        bondlist:
+
+            - harmonic: { index: [0,1], k: 4.8, req: 3.5 }
+            - harmonic: { index: [0,2], k: 4.8, req: 5 }
+            - harmonic: { index: [2,3], k: 4.8, req: 3.5 }
+            - harmonic: { index: [2,4], k: 4.8, req: 5 }
+            - harmonic: { index: [4,5], k: 4.8, req: 3.5 }
+            - harmonic: { index: [4,6], k: 4.8, req: 5 }
+            - harmonic: { index: [6,7], k: 4.8, req: 3.5 }
+            - harmonic: { index: [6,8], k: 4.8, req: 5 }
+            - harmonic: { index: [8,9], k: 4.8, req: 3.5 }
+            - harmonic: { index: [8,10], k: 4.8, req: 5 }
+            - harmonic: { index: [10,11], k: 4.8, req: 3.5 }
+            - harmonic: { index: [10,12], k: 4.8, req: 5 }
+            - harmonic: { index: [12,13], k: 4.8, req: 3.5 }
+            - harmonic: { index: [12,14], k: 4.8, req: 5 }
+            - harmonic: { index: [14,15], k: 4.8, req: 3.5 }
+            - harmonic: { index: [14,16], k: 4.8, req: 5 }
+            - harmonic: { index: [16,17], k: 4.8, req: 3.5 }
+            - harmonic: { index: [16,18], k: 4.8, req: 5 }
+            - harmonic: { index: [18,19], k: 4.8, req: 3.5 }
+            - harmonic: { index: [18,20], k: 4.8, req: 5 }
+            - harmonic: { index: [20,21], k: 4.8, req: 3.5 }
+            - harmonic: { index: [20,22], k: 4.8, req: 5 }
+            - harmonic: { index: [22,23], k: 4.8, req: 3.5 }
+            - harmonic: { index: [22,24], k: 4.8, req: 5 }
+            - harmonic: { index: [24,25], k: 4.8, req: 3.5 }
+            - harmonic: { index: [24,26], k: 4.8, req: 5 }
+            - harmonic: { index: [26,27], k: 4.8, req: 3.5 }
+            - harmonic: { index: [26,28], k: 4.8, req: 5 }
+            - harmonic: { index: [28,29], k: 4.8, req: 3.5 }
+            - harmonic: { index: [28,30], k: 4.8, req: 5 }
+            - harmonic: { index: [30,31], k: 4.8, req: 3.5 }
+            - harmonic: { index: [30,32], k: 4.8, req: 5 }
+            - harmonic: { index: [32,33], k: 4.8, req: 3.5 }
+            - harmonic: { index: [32,34], k: 4.8, req: 5 }
+            - harmonic: { index: [34,35], k: 4.8, req: 3.5 }
+            - harmonic: { index: [34,36], k: 4.8, req: 5 }
+            - harmonic: { index: [36,37], k: 4.8, req: 3.5 }
+            - harmonic: { index: [36,38], k: 4.8, req: 5 }
+            - harmonic: { index: [38,39], k: 4.8, req: 3.5 }
+            - harmonic: { index: [38,40], k: 4.8, req: 5 }
+            - harmonic: { index: [40,41], k: 4.8, req: 3.5 }
+            - harmonic: { index: [40,42], k: 4.8, req: 5 }
+            - harmonic: { index: [42,43], k: 4.8, req: 3.5 }
+            - harmonic: { index: [42,44], k: 4.8, req: 5 }
+            - harmonic: { index: [44,45], k: 4.8, req: 3.5 }
+            - harmonic: { index: [44,46], k: 4.8, req: 5 }
+            - harmonic: { index: [46,47], k: 4.8, req: 3.5 }
+            - harmonic: { index: [46,48], k: 4.8, req: 5 }
+            - harmonic: { index: [48,49], k: 4.8, req: 3.5 }
+            - harmonic: { index: [48,50], k: 4.8, req: 5 }
+            - harmonic: { index: [50,51], k: 4.8, req: 3.5 }
+            - harmonic: { index: [50,52], k: 4.8, req: 5 }
+            - harmonic: { index: [52,53], k: 4.8, req: 3.5 }
+            - harmonic: { index: [52,54], k: 4.8, req: 5 }
+            - harmonic: { index: [54,55], k: 4.8, req: 3.5 }
+            - harmonic: { index: [54,56], k: 4.8, req: 5 }
+            - harmonic: { index: [56,57], k: 4.8, req: 3.5 }
+            - harmonic: { index: [56,58], k: 4.8, req: 5 }
+            - harmonic: { index: [58,59], k: 4.8, req: 3.5 }
+        excluded_neighbours: 1
+            
+insertmolecules:
+    - rna: {N: 1}
+
+energy:
+    - bonded: {}
+    - nonbonded_splined:
+        default:
+            - wca:
+                mixing: LB
+            - custom:
+                cutoff: 1000
+                function: lB * q1 * q2 * ( exp(-kappa*r) / r - exp(-kappa*Rc) / Rc )
+                constants:
+                    lB: 7.147141976012449
+                    kappa: 0.10400554883197174
+
+moves:
+    - transrot: {molecule: rna, repeat: N}
+    
+analysis:
+    - savestate: {file: state.json}
+    - savestate: {file: confout.pqr}
+    - savestate: {file: confout.gro}
+    - xtcfile: {file: traj.xtc, nstep: 1e3}
+    - reactioncoordinate: {file: Rg.dat, nstep: 1e3, type: molecule, property: Rg, index: 0}
+    - reactioncoordinate: {file: Ree.dat, nstep: 1e3, type: molecule, property: end2end, index: 0}
+    - reactioncoordinate: {file: tau.dat, nstep: 1e3, type: molecule, property: helicity, index: 0}
+    - systemenergy: {file: energy.dat, nstep: 1e5}
