@@ -24,16 +24,16 @@
         },
         {
             "systemenergy": {
-                "Cv/kB": 1589.1,
+                "Cv/kB": 1740.2,
                 "file": "energy.dat",
                 "final": [
                     0.0,
-                    9152.556834634765,
+                    9112.491348282909,
                     0.0,
-                    -4393.987003041535
+                    -4393.975865155346
                 ],
-                "init": 4831.5,
-                "mean": 4799.4,
+                "init": 4758.6,
+                "mean": 4723.8,
                 "nstep": 10000,
                 "samples": 200
             }
@@ -54,7 +54,7 @@
         },
         {
             "reactioncoordinate": {
-                "average": 0.9632688710332931,
+                "average": 0.9662606228391951,
                 "file": "order.dat",
                 "nstep": 1000,
                 "property": "OrderParam",
@@ -64,7 +64,7 @@
         },
         {
             "reactioncoordinate": {
-                "average": 0.0010943855045556343,
+                "average": -0.0001403612735576753,
                 "file": "tau.dat",
                 "index": 3,
                 "nstep": 1000,
@@ -75,7 +75,7 @@
         },
         {
             "reactioncoordinate": {
-                "average": 0.0365,
+                "average": 0.065,
                 "file": "NNa.dat",
                 "index": 0,
                 "nstep": 1000,
@@ -86,7 +86,7 @@
         },
         {
             "reactioncoordinate": {
-                "average": 138.4835,
+                "average": 138.982,
                 "file": "NCl.dat",
                 "index": 1,
                 "nstep": 1000,
@@ -108,7 +108,7 @@
         },
         {
             "reactioncoordinate": {
-                "average": 30.74843815083418,
+                "average": 31.350049220766678,
                 "file": "radius.dat",
                 "nstep": 1000,
                 "property": "radius",
@@ -118,7 +118,7 @@
         },
         {
             "reactioncoordinate": {
-                "average": 97.7507672924686,
+                "average": 94.00032026286239,
                 "file": "Lz.dat",
                 "nstep": 1000,
                 "property": "Lz",
@@ -128,7 +128,7 @@
         },
         {
             "reactioncoordinate": {
-                "average": 210.4015,
+                "average": 210.844,
                 "file": "NHHD.dat",
                 "index": 1,
                 "nstep": 1000,
@@ -139,7 +139,7 @@
         },
         {
             "reactioncoordinate": {
-                "average": 15.414863208874003,
+                "average": 15.87712756339577,
                 "dir": [
                     1.0,
                     1.0,
@@ -161,7 +161,7 @@
         },
         {
             "reactioncoordinate": {
-                "average": 8.974953182856122,
+                "average": 9.184320067779321,
                 "dir": [
                     1.0,
                     1.0,
@@ -183,7 +183,7 @@
         },
         {
             "reactioncoordinate": {
-                "average": 16.16969850958853,
+                "average": 16.617041863084477,
                 "dir": [
                     1.0,
                     1.0,
@@ -210,7 +210,7 @@
             "hamiltonian": [
                 {
                     "ContainerOverlap": {
-                        "relative time": 6.400361377962186e-05
+                        "relative time": 6.291717969422056e-05
                     }
                 },
                 {
@@ -13657,7 +13657,7 @@
                                 }
                             }
                         ],
-                        "relative time": 0.0005400710606312897
+                        "relative time": 0.0005201497702643328
                     }
                 },
                 {
@@ -13746,8 +13746,8 @@
         }
     ],
     "geometry": {
-        "length": 93.57764646772054,
-        "radius": 31.419091174791692,
+        "length": 93.79222734106337,
+        "radius": 31.383129791118904,
         "type": "hexagonal"
     },
     "git revision": "8cc0dacb (2021-01-24)",
@@ -17230,55 +17230,55 @@
         }
     ],
     "montecarlo": {
-        "average potential energy (kT)": 4801.149938851313,
+        "average potential energy (kT)": 4722.5549804412885,
         "last move": "transrot"
     },
     "moves": [
         {
             "rcmc": {
-                "acceptance": 0.0105,
+                "acceptance": 0.0114,
                 "cite": "doi:10/fqcpg3",
-                "moves": 40007484,
+                "moves": 40000010,
                 "reactions": {
                     "= Na + Cl": {
-                        "acceptance -->": 0.0031772926288010555,
-                        "acceptance <--": 0.08701523081052066,
-                        "attempts": 3453832
+                        "acceptance -->": 0.0036988012655025716,
+                        "acceptance <--": 0.06739582992730166,
+                        "attempts": 3515929
                     },
                     "= lipid": {
                         "acceptance -->": 0.0,
                         "acceptance <--": 0.0,
-                        "attempts": 6654893
+                        "attempts": 6669260
                     },
                     "HHD + Cl = HD + H": {
-                        "acceptance -->": 0.031112124288921652,
-                        "acceptance <--": 0.031165442132326745,
-                        "attempts": 6657013
+                        "acceptance -->": 0.02938568064775123,
+                        "acceptance <--": 0.02942803039163996,
+                        "attempts": 6668581
                     },
                     "HHD = HD + Na + H": {
-                        "acceptance -->": 0.005133232166495139,
-                        "acceptance <--": 0.14464239348024557,
-                        "attempts": 3453158
+                        "acceptance -->": 0.006640784940480223,
+                        "acceptance <--": 0.12029577972826741,
+                        "attempts": 3519176
                     },
                     "HP + Cl = P + H": {
-                        "acceptance -->": 0.429041757465104,
-                        "acceptance <--": 0.02182159973496154,
-                        "attempts": 3505155
+                        "acceptance -->": 0.37439073744963136,
+                        "acceptance <--": 0.025509583987165532,
+                        "attempts": 3559601
                     },
                     "HP = P + Na + H": {
-                        "acceptance -->": 0.03941526544492726,
-                        "acceptance <--": 0.05613859736798268,
-                        "attempts": 289436
+                        "acceptance -->": 0.04160818700585603,
+                        "acceptance <--": 0.05194043149676459,
+                        "attempts": 411344
                     }
                 },
-                "relative time": 0.104,
-                "relative time (without energy calc)": 0.0239,
+                "relative time": 0.105,
+                "relative time (without energy calc)": 0.0245,
                 "repeat": 20
             }
         },
         {
             "moltransrot": {
-                "acceptance": 0.415,
+                "acceptance": 0.418,
                 "dir": [
                     1.0,
                     1.0,
@@ -17293,16 +17293,16 @@
                 "dprot": 0.5,
                 "molecule": "lipid",
                 "molid": 2,
-                "moves": 400008589,
-                "relative time": 0.444,
+                "moves": 400001760,
+                "relative time": 0.443,
                 "repeat": 200,
-                "√⟨r²⟩": 0.0732,
-                "√⟨θ²⟩/°": 3.92
+                "√⟨r²⟩": 0.0735,
+                "√⟨θ²⟩/°": 3.94
             }
         },
         {
             "transrot": {
-                "acceptance": 0.31,
+                "acceptance": 0.311,
                 "dir": [
                     1.0,
                     1.0,
@@ -17310,7 +17310,7 @@
                 ],
                 "molecule": "lipid",
                 "molid": 2,
-                "moves": 19998416,
+                "moves": 20002774,
                 "repeat": 10,
                 "√⟨r²⟩": 0.383
             }
@@ -17332,7 +17332,7 @@
         },
         {
             "transrot": {
-                "acceptance": 0.0108,
+                "acceptance": 0.0172,
                 "dir": [
                     1.0,
                     1.0,
@@ -17340,14 +17340,14 @@
                 ],
                 "molecule": "Na",
                 "molid": 0,
-                "moves": 19997416,
+                "moves": 20004680,
                 "repeat": 10,
-                "√⟨r²⟩": 2.08
+                "√⟨r²⟩": 2.15
             }
         },
         {
             "transrot": {
-                "acceptance": 0.494,
+                "acceptance": 0.496,
                 "dir": [
                     1.0,
                     1.0,
@@ -17355,22 +17355,22 @@
                 ],
                 "molecule": "rna",
                 "molid": 3,
-                "moves": 287984138,
-                "relative time": 0.105,
+                "moves": 287991843,
+                "relative time": 0.106,
                 "repeat": 144,
-                "√⟨r²⟩": 0.627
+                "√⟨r²⟩": 0.629
             }
         },
         {
             "volume": {
-                "acceptance": 0.255,
+                "acceptance": 0.24,
                 "dV": 0.05,
                 "method": "isochoric",
-                "moves": 2003957,
-                "relative time": 0.333,
+                "moves": 1998933,
+                "relative time": 0.331,
                 "repeat": 1,
-                "√⟨ΔV²⟩": 1110.0,
-                "∛√⟨ΔV²⟩": 10.4,
+                "√⟨ΔV²⟩": 1030.0,
+                "∛√⟨ΔV²⟩": 10.1,
                 "⟨V⟩": 320000.0
             }
         }
@@ -17433,10 +17433,10 @@
             }
         }
     ],
-    "relative drift": -4.0064051582587434e-12,
+    "relative drift": -9.129216543542658e-12,
     "simulation time": {
-        "in minutes": 2168.25,
-        "in seconds": 130095
+        "in minutes": 2154.1833333333334,
+        "in seconds": 129251
     },
     "temperature": 310.0
 }
