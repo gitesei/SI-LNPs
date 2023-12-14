@@ -7,7 +7,7 @@ This repository contains Python code, [Jupyter](http://jupyter.org) Notebooks, a
 
 ### Usage
 
-To open the Notebooks, install [Miniconda](https://conda.io/miniconda.html) and make sure all required packages are installed by issuing the following terminal commands
+To open the Notebooks, either click the _launch binder_ badge above or install [Miniconda](https://conda.io/miniconda.html) and make sure all required packages are installed by issuing the following terminal commands
 
 ```bash
     conda env create -f environment.yml
