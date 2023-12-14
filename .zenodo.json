@@ -1,5 +1,5 @@
 {
-    "title": "Electronic Notebook: pH-sensitive coarse-grained model of mRNA lipid nanoparticles",
+    "title": "Electronic Notebooks: pH-sensitive coarse-grained model of mRNA lipid nanoparticles",
     "description": "This repository contains electronic notebooks (Jupyter) for reproducing the simulation results presented in the scientific paper Lipid shape and packing are key for optimal design of pH-sensitive mRNA lipid nanoparticles",
     "creators": [
         {
@@ -8,8 +8,18 @@
             "orcid": "0000-0003-4339-4460"
         },
         {
+            "name": "Ya-Wen Hsiao",
+            "affiliation": "The Hartree Centre, Science and Technology Facilities Council (STFC) Daresbury Laboratory, Warrington, WA4 4AD, United Kingdom",
+            "orcid": "0000-0002-2625-9892"
+        },
+        {
+            "name": "David J. Bray",
+            "affiliation": "The Hartree Centre, Science and Technology Facilities Council (STFC) Daresbury Laboratory, Warrington, WA4 4AD, United Kingdom",
+            "orcid": "0000-0002-6107-0091"
+        },
+        {
             "name": "Martin Trulsson",
-            "affiliation": "Division of Computational Chemistry, Department of Chemistry, Lund University, Sweden",
+            "affiliation": "Division of Computational Chemistry, Department of Chemistry, Lund University, Lund SE-221 00, Sweden",
             "orcid": "0000-0002-5398-9145"
         },
         {
@@ -19,7 +29,7 @@
         },
         {
             "name": "Mikael Lund",
-            "affiliation": "Division of Computational Chemistry, Department of Chemistry, Lund University, Sweden",
+            "affiliation": "Division of Computational Chemistry, Department of Chemistry, Lund University, Lund SE-221 00, Sweden",
             "orcid": "0000-0001-8178-8175"
         }
     ],
