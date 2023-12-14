@@ -1,0 +1,45 @@
+{
+    "title": "Electronic Notebook: Lipid shape and packing are key for optimal design of pH-sensitive mRNA lipid nanoparticles",
+    "description": "This repository contains electronic notebooks (Jupyter) for reproducing the simulation results presented in the paper Lipid shape and packing are key for optimal design of pH-sensitive mRNA lipid nanoparticles",
+    "creators": [
+        {
+            "name": "Giulio Tesei",
+            "affiliation": "Structural Biology and NMR Laboratory and The Linderstrøm-Lang Centre for Protein Science, Department of Biology, University of Copenhagen, Copenhagen DK-2200, Denmark",
+            "orcid": "0000-0003-4339-4460"
+        },
+        {
+            "name": "Mikael Lund",
+            "affiliation": "Division of Computational Chemistry, Department of Chemistry, Lund University, Sweden",
+            "orcid": "0000-0001-8178-8175"
+        }
+    ],
+    "contributors": [
+        {
+            "name": "Alfons Åberg",
+            "orcid": "0000-0000-0000-0000",
+            "type": "Researcher",
+            "affiliation": "Department of ..."
+        }
+    ],
+    "keywords": [
+        "reproducible science",
+        "electronic notebooks"
+    ],
+    "related_identifiers": [
+        {
+            "scheme": "url",
+            "identifier": "https://github.com/gitesei/SI-LNPs",
+            "relation": "isSupplementTo"
+        },
+        {
+            "scheme": "doi",
+            "identifier": "10.1073/pnas.2311700120",
+            "relation": "isSupplementTo"
+        }
+    ],
+    "license": {
+        "id": "CC0-1.0"
+    },
+    "access_right": "open",
+    "upload_type": "software"
+}
