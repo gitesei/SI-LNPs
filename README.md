@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10373101.svg)](https://doi.org/10.5281/zenodo.10373101)
+
 # pH-sensitive coarse-grained model of mRNA lipid nanoparticles
 
 This repository contains Python code, [Jupyter](http://jupyter.org) Notebooks, and data for reproducing the results presented in the manuscript _Lipid shape and packing are key for optimal design of pH-sensitive mRNA lipid nanoparticles_.
