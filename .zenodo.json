@@ -8,17 +8,20 @@
             "orcid": "0000-0003-4339-4460"
         },
         {
+            "name": "Martin Trulsson",
+            "affiliation": "Division of Computational Chemistry, Department of Chemistry, Lund University, Sweden",
+            "orcid": "0000-0002-5398-9145"
+        },
+        {
+            "name": "Lennart Lindfors",
+            "orcid": "0000-0002-6711-0605",
+            "type": "Researcher",
+            "affiliation": "Advanced Drug Delivery, Pharmaceutical Sciences, BioPharmaceuticals R&D, AstraZeneca, Gothenburg, Mölndal 431 83, Sweden"
+        },
+        {
             "name": "Mikael Lund",
             "affiliation": "Division of Computational Chemistry, Department of Chemistry, Lund University, Sweden",
             "orcid": "0000-0001-8178-8175"
-        }
-    ],
-    "contributors": [
-        {
-            "name": "Alfons Åberg",
-            "orcid": "0000-0000-0000-0000",
-            "type": "Researcher",
-            "affiliation": "Department of ..."
         }
     ],
     "keywords": [
