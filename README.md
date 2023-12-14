@@ -1,3 +1,4 @@
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/gitesei/SI-LNPs/HEAD)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10373101.svg)](https://doi.org/10.5281/zenodo.10373101)
 
 # pH-sensitive coarse-grained model of mRNA lipid nanoparticles
