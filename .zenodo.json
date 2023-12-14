@@ -1,6 +1,6 @@
 {
-    "title": "Electronic Notebook: Lipid shape and packing are key for optimal design of pH-sensitive mRNA lipid nanoparticles",
-    "description": "This repository contains electronic notebooks (Jupyter) for reproducing the simulation results presented in the paper Lipid shape and packing are key for optimal design of pH-sensitive mRNA lipid nanoparticles",
+    "title": "Electronic Notebook: pH-sensitive coarse-grained model of mRNA lipid nanoparticles",
+    "description": "This repository contains electronic notebooks (Jupyter) for reproducing the simulation results presented in the scientific paper Lipid shape and packing are key for optimal design of pH-sensitive mRNA lipid nanoparticles",
     "creators": [
         {
             "name": "Giulio Tesei",
@@ -15,7 +15,6 @@
         {
             "name": "Lennart Lindfors",
             "orcid": "0000-0002-6711-0605",
-            "type": "Researcher",
             "affiliation": "Advanced Drug Delivery, Pharmaceutical Sciences, BioPharmaceuticals R&D, AstraZeneca, Gothenburg, Mölndal 431 83, Sweden"
         },
         {
